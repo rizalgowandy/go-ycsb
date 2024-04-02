@@ -71,6 +71,8 @@ const (
 	RequestDistributionDefault = "uniform"
 	ZeroPadding                = "zeropadding"
 	ZeroPaddingDefault         = int64(1)
+	MinScanLength              = "minscanlength"
+	MinScanLengthDefault       = int64(1)
 	MaxScanLength              = "maxscanlength"
 	MaxScanLengthDefault       = int64(1000)
 	// "uniform", "zipfian"
@@ -108,4 +110,18 @@ const (
 	KeyPrefixDefault = "user"
 
 	LogInterval = "measurement.interval"
+
+	MeasurementType          = "measurementtype"
+	MeasurementTypeDefault   = "histogram"
+	MeasurementRawOutputFile = "measurement.output_file"
+
+	Command = "command"
+
+	OutputStyle = "outputstyle"
+
+	// MeasurementHistogramPercentileExport properties -- related to histogram latencies exporting
+	MeasurementHistogramPercentileExport                = "histogram.percentiles.export"
+	MeasurementHistogramPercentileExportDefault         = false
+	MeasurementHistogramPercentileExportFilepath        = "histogram.percentiles.export.filepath"
+	MeasurementHistogramPercentileExportFilepathDefault = "./"
 )
